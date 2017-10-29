@@ -184,7 +184,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Home
+            Startseite
           </a>
         </li>
       
@@ -194,7 +194,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archives
+            Archiv
           </a>
         </li>
       
@@ -260,7 +260,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-29T09:45:18+08:00">
                 2017-10-29
@@ -372,7 +372,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/10/22/Build-Your-Personal-Blog/" itemprop="url">Build Your Personal Blog</a></h1>
+                <a class="post-title-link" href="/2017/10/22/Build-Your-Personal-Blog/" itemprop="url">搭建个人博客</a></h1>
         
 
         <div class="post-meta">
@@ -382,7 +382,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-22T21:18:22+08:00">
                 2017-10-22
@@ -424,61 +424,62 @@
       
         
           
-            <h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p> This blog is writtern to show my understanding of GitHub Pages adn Hexo.And I hope this blog can help you know how to build your own blog with GitHub Page and Hexo.</p>
-<p> I always begin with the function of the tools or services I used so that  I can figure out how much I should know  about them.</p>
-<h2 id="What-is-GitHub-Pages"><a href="#What-is-GitHub-Pages" class="headerlink" title="What is GitHub Pages"></a>What is GitHub Pages</h2><blockquote>
+            <h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>这篇博文主要用来说明GitHub Pages和Hexo配合搭建自己的个人博客。</p>
+<p> 在搭建之前，首先得弄明白Git Pages 和 Hexo是什么东西。<br>所有的工具在使用它之前首先得明白它的功能和使用方法。</p>
+<h3 id="What-is-GitHub-Pages"><a href="#What-is-GitHub-Pages" class="headerlink" title="What is GitHub Pages"></a>What is GitHub Pages</h3><blockquote>
 <p>GitHub Pages is a static site hosting service.</p>
 </blockquote>
-<p>The describtion above is copied form the <a href="https://help.github.com/articles/what-is-github-pages/,from" target="_blank" rel="external">https://help.github.com/articles/what-is-github-pages/,from</a> which, we can know GitHub Pages is a kind of service  provied by GitHub. The function is obvious–Static Site Hosting.</p>
+<p>上面对于GitHub Pages的定义来自于 <a href="https://help.github.com/articles/what-is-github-pages/,from" target="_blank" rel="external">https://help.github.com/articles/what-is-github-pages/,from</a> 。我们可以看出GitHub Pages就是GitHub提供的一种服务，其功能就是作为静态网站托管。简单的说就是你可以将你的静态网站通过该服务进行托管。 </p>
 <blockquote>
 <p>GitHub Pages is designed to host your personal, organization, or project pages directly from a GitHub repository. To learn more about the different types of GitHub Pages sites, see “User, organization, and project pages.”</p>
 <p>You can create and publish GitHub Pages online using the Jekyll Theme Chooser. If you prefer to work locally, you can use GitHub Desktop or the command line.</p>
 </blockquote>
-<p>So you can hardly  figure out the principle of this service for that the source codes must be read. Is it worthy to read a lots of source codes if you can get them？ I think if you just want to learn how to build a site to write and manage your blog. The best way is just use the service. So even though you can learn the framwork of Jekyll and can write something differnt,I consider the contents of blog is what matters.<br>That is why I choose Hexo.</p>
-<h2 id="what-is-hexo"><a href="#what-is-hexo" class="headerlink" title="what is hexo"></a>what is hexo</h2><blockquote>
+<p>这里简单描述了GitHub Pages的一些应用场景和使用方式。如果深究GitHub Pages的原理是比较耗时的，但是所有的服务都是基于某种特定的协议的，至于这种协议或者说规则是什么，得具体了解它的原理，甚至得看些源码。所以，对于大多数搭建个人博客的用户来说，如果从0开始使用GitHub Pages搭建博客所花费的时间是不值得的。 好在Hexo能帮你解决这些问题。</p>
+<h3 id="what-is-hexo"><a href="#what-is-hexo" class="headerlink" title="what is hexo"></a>what is hexo</h3><blockquote>
 <p>Hexo is a fast, simple and powerful blog framework. You write posts in Markdown (or other languages) and Hexo generates static files with a beautiful theme in seconds.</p>
 </blockquote>
-<p>From <a href="https://hexo.io/docs/" target="_blank" rel="external">https://hexo.io/docs/</a> we know use hexo can save a lot of time to learn about Jekyll.</p>
-<h1 id="Installion"><a href="#Installion" class="headerlink" title="Installion"></a>Installion</h1><p>What you need are :</p>
+<p>从 <a href="https://hexo.io/docs/" target="_blank" rel="external">https://hexo.io/docs/</a> 中可以看出，Hexo就是为了搭建博客所设计的一种框架，通过这种框架就能很快的实现博客的搭建了。</p>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>为了搭建个人博客需要进行下面的安装 :</p>
 <ul>
 <li><a href="https://git-scm.com/" target="_blank" rel="external">Git</a> .</li>
 <li><a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a>.</li>
 <li>hexo</li>
 </ul>
-<p>hexo can be installed with the command:</p>
+<p>Hexo的安装可以使用下面的命令行:</p>
 <blockquote>
 <p>$ npm install -g hexo-cli</p>
 </blockquote>
-<p>More details can get from <a href="https://hexo.io/docs/" target="_blank" rel="external">https://hexo.io/docs/</a>.</p>
-<h1 id="Set-Up"><a href="#Set-Up" class="headerlink" title="Set Up"></a>Set Up</h1><p>Make a target &lt;<strong>floder</strong>&gt;,and you can initialise Hexo in it.</p>
+<p>具体的细节可查看官方文档 <a href="https://hexo.io/docs/" target="_blank" rel="external">https://hexo.io/docs/</a>.</p>
+<h1 id="搭建"><a href="#搭建" class="headerlink" title="搭建"></a>搭建</h1><p>先建立一个目标文件夹&lt;<strong>floder</strong>&gt;用以进行Hexo的初始化，然后在终端中敲入下面命令：</p>
 <blockquote>
 <p>$ cd floder</p>
 <p>$ hexo init</p>
 <p>$ npm install</p>
 </blockquote>
-<p>You can see some files generated in the target floder.<br>_config .yml is configuration file.<a href="https://hexo.io/docs/configuration.html" target="_blank" rel="external">https://hexo.io/docs/configuration.html</a> can help you figure out how to set the property.</p>
-<p>For delopying the hexo to github, you need open the _config.yml and you must create a  repository with the name “username.github.io”(<a href="https://help.github.com/articles/user-organization-and-project-pages/" target="_blank" rel="external">https://help.github.com/articles/user-organization-and-project-pages/</a>).</p>
+<p>如果一切顺利，可以看到目标文件夹下生成了许多的文件，其中有一个名为<br>_config .yml 的文件，这个文件就是配置文件，可以修改文件中对应行的参数进行博客网站的一些设置的修改。具体可提供的配置选项可以参考<a href="https://hexo.io/docs/configuration.html" target="_blank" rel="external">https://hexo.io/docs/configuration.html</a> 。</p>
+<p>为了将Hexo部署到GitHub,并且使用GitHub Pages的服务，得遵循GitHub约定的一些规则。 就以个人账户的博客为例，需要创建一个名为”username.github.io”的仓库，然后以该仓库作为部署的目标仓库。(其他类型使用GitHub Pages的规则可参考<a href="https://help.github.com/articles/user-organization-and-project-pages/" target="_blank" rel="external">https://help.github.com/articles/user-organization-and-project-pages/</a>).</p>
+<p>然后打开刚才提到的_config .yml 文件，修改部署部分的参数。</p>
 <blockquote>
 <p>deploy:</p>
 <p>type: git</p>
 <p>repository: git@github.com:username/username.github.io.git</p>
 <p>branch: master</p>
 </blockquote>
-<p>Then you can run the command below:</p>
+<p>如果上述步骤正确可以依次输入以下命令完成部署：</p>
 <blockquote>
 <p>$ hexo g</p>
 <p>$ hexo d</p>
 </blockquote>
-<p>If succeed, Your site is published at <a href="https://username.github.io/" target="_blank" rel="external">https://username.github.io/</a>.<br>And normally, you may need </p>
-<blockquote>
-<p>$ npm install hexo-deployer-git –save</p>
-</blockquote>
-<p>if you have the error:</p>
+<p>部署成功后，就可以在 <a href="https://username.github.io/" target="_blank" rel="external">https://username.github.io/</a> 中查看你部署的网站了.<br>如果你出现了以下错误:</p>
 <blockquote>
 <p>ERROR Deployer not found: git</p>
 </blockquote>
-<h1 id="Writing-and-Manage"><a href="#Writing-and-Manage" class="headerlink" title="Writing and Manage"></a>Writing and Manage</h1><p>Actually you can get a lot messages from the <a href="https://hexo.io/docs/" target="_blank" rel="external">https://hexo.io/docs/</a>. And it can solve the problems about using hexo.</p>
-<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><p>【1】<a href="https://help.github.com/categories/github-pages-basics/" target="_blank" rel="external">https://help.github.com/categories/github-pages-basics/</a></p>
+<p>可能需要输入下面的命令进行解决：</p>
+<blockquote>
+<p>$ npm install hexo-deployer-git –save</p>
+</blockquote>
+<h1 id="发布和管理"><a href="#发布和管理" class="headerlink" title="发布和管理"></a>发布和管理</h1><p>写博客和管理博客的方法均可在 <a href="https://hexo.io/docs/" target="_blank" rel="external">https://hexo.io/docs/</a> 中查看. </p>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p>【1】<a href="https://help.github.com/categories/github-pages-basics/" target="_blank" rel="external">https://help.github.com/categories/github-pages-basics/</a></p>
 <p>【2】<a href="https://hexo.io/docs/" target="_blank" rel="external">https://hexo.io/docs/</a></p>
 
           
@@ -562,7 +563,7 @@
                 <a href="/archives/">
               
                   <span class="site-state-item-count">2</span>
-                  <span class="site-state-item-name">posts</span>
+                  <span class="site-state-item-name">Artikel</span>
                 </a>
               </div>
             
@@ -614,7 +615,7 @@
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
 
 
