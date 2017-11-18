@@ -231,6 +231,147 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/18/创建个人知识库/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="X Y">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Xyfancy's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/11/18/创建个人知识库/" itemprop="url">创建个人知识库</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-18T12:41:23+08:00">
+                2017-11-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>经过这几天对于Github Wiki的学习和使用，越发觉得个人知识库的重要性。在人工智能如火如荼的今天，知识库的重要性已经不言而喻了。从原来古人在岩壁上记录下信息，到在龟壳上，竹简上，纸上，到如今的各种各样的存储介质，数据中心等等。人的记忆力是有限，将学习到的东西记录下来，形成自己的知识库是很有必要的。</p>
+<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>Wiki（维基），在我看来就是现代化[1]的一种知识记录的系统。著名的维基百科就是一个巨大的知识库。但是就跟书籍一样，你去到图书馆也不可能想看所有的书，也很难看完所有的书。对于我们每个人来说，想获取的知识不尽相同，所以有必要形成自己的个人知识库来收录自己感兴趣的知识，其实也就相当于学习笔记。</p>
+<p>有的人喜欢通过用笔记录，对于我来说可能更倾向于使用计算机来记录，而且我认为计算机能更有效地完成记录工作。同样是为了数据存储，为何不直接使用数据库而是Wiki呢？其实Wiki你也可以当作一个广义上的数据库，当我们选择工具的时候经常会问自己什么样的工具好，其实这个是没有定论的（每个人看法不同），在我看来对于知识的记录不需要多么复杂的管理系统以达到你得写一些SQL语言或者脚本来进行管理的地步，单纯记录东西我感觉wiki就够用了，特别是GitHub提供了远程的免费托管，这对于我们知识库的稳定保存是有好处的。所以当我看到GitHub Wiki的时候感觉这个就是我想要得东西。</p>
+<h1 id="GitHub-Wiki"><a href="#GitHub-Wiki" class="headerlink" title="GitHub Wiki"></a>GitHub Wiki</h1><p>下面简单说以下GitHub Wiki。</p>
+<ul>
+<li>开启GitHub Wiki服务</li>
+</ul>
+<p>GitHub Wiki服务开启很简单，你只需要在指定的仓库的Settings中勾选Wikis就行了。</p>
+<ul>
+<li>Wiki的构成</li>
+</ul>
+<p>在GitHub Wiki中用户编辑的主要有4个主要部分，分别是Home,_Footer,_Sidebar和用户自己创建的Page。其实Wiki的各个部分用来做什么都是根据个人的想法和需求。所以下面谈谈我各部分的使用。</p>
+<p>Home,即首页，用来描述该Wiki记录的内容。</p>
+<p>_Footer，即页脚，放上个人的一些联系信息，如邮箱和一些博客地址。</p>
+<p>_Sidebar，即侧边栏，可以用来形成各个页的索引，如果使用<a href="https://github.com/JavaLearningbyCSE/thinkinginjava/tree/master/markdownlearning" target="_blank" rel="external">Markdown</a>，就是生成对应页的隐性链接。</p>
+<p>Page，用户自己创建的页，可以用来记录自己想记录的，推荐GitHub支持的<a href="https://github.com/JavaLearningbyCSE/thinkinginjava/tree/master/markdownlearning" target="_blank" rel="external">Markdown</a>进行记录。</p>
+<ul>
+<li>一点看法</li>
+</ul>
+<p>由于GitHub本着开源开放的思想，很多Wiki其实都是可以直接Clone下来的，但是个人知识库的目的不在于单纯地记录，而且体会记录和掌握知识的过程。</p>
+<p>如果只是单纯的建立各个仓库的Wiki其实对于后面的查找也是不方便的，但是如果将所有的知识记录在一个Wiki上也是很难管理的，所以我认为可以再建立一个Wiki提供其他各个Wiki的链接。所以，我在该博客的仓库下建立了一个Wiki：<a href="https://github.com/xyfancy/xyfancy.github.io/wiki" target="_blank" rel="external">https://github.com/xyfancy/xyfancy.github.io/wiki</a></p>
+<h3 id="一些名词的个人看法"><a href="#一些名词的个人看法" class="headerlink" title="一些名词的个人看法"></a>一些名词的个人看法</h3><p>[1] 现代化这个词其实很有意思，作者有幸听过南大徐家福老先生的讲座，对于我们这些计算机工作者来说现代化其实就是指第一台计算机面世之后</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/29/路在前方/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -562,7 +703,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">Artikel</span>
                 </a>
               </div>
