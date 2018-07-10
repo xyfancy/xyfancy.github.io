@@ -1,7 +1,7 @@
 title: xyfancy's Blog
 description: xyfancy's Blog
 permalink: ':title/'
-baseurl: 
+baseurl: "https://xyfancy.github.io/" 
 url: "https://xyfancy.github.io/" 
 
 # Author Settings
