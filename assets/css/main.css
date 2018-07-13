@@ -123,6 +123,7 @@ abbr[title] {
 b,
 strong {
   font-weight: inherit;
+  color: #000000;
 }
 
 /**
@@ -131,6 +132,7 @@ strong {
 b,
 strong {
   font-weight: bolder;
+  color: #000000;
 }
 
 /**
